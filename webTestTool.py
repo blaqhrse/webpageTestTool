@@ -15,9 +15,8 @@ from email.encoders import encode_base64  # encodes data for transport; default 
 
 def get_screen_shot():
     browser = webdriver.Firefox()  # specify Firefox as the browser of choice
-    # browser.get('http://www.zuzustutus.com')
     browser.get('http://www.python.org')  # GET call
-    # assert "ZuZu's TuTus" in browser.title  # Validates target
+    # assert "Python" in browser.title  # Validates target
     browser.save_screenshot('screenshots.png')  # takes a screen shot of the page
     browser.quit()  # close out browser
 
